@@ -40,7 +40,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
    };
    ```
 
-6. Create a file **_tailwind.css_** in your styles folder.
+6. Create a file **_tailwind.css_** in your **styles folder**.
 
    ```js
    @import 'tailwindcss/base';
