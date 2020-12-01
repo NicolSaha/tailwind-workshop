@@ -68,7 +68,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 <hr/>
 
-## 🚀 Optional but Recommended
+## 💼 Optional but Recommended
 
 1. Install IntelliSense for Visual Studio Code
 
@@ -89,6 +89,10 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 3. `npm run tailwind`
 
 <hr/>
+
+## 🚀 Optional Final Touches
+
+1. Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
 
 ## 💥 DON'T FORGET TO HAVE FUN
 
