@@ -119,7 +119,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 <script>AOS.init();</script>
 ```
 
-4. Upload it to [Netlify](https://www.netlify.com/), so that others can see your creation!
+- Upload it to [Netlify](https://www.netlify.com/), so that others can see your creation!
 
 ## 💥 DON'T FORGET TO HAVE FUN
 
