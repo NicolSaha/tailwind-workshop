@@ -1,12 +1,14 @@
 # ✨ TAILWINDCSS WORKSHOP
 
-### Today you are all going to build your very own landing page, using the Tailwind CSS framework!
+### Today you're all going to build your very own landing page, using the Tailwind CSS framework and a few other tools!
 
 <hr/>
 
 ## 💭 Assignment
 
-- Dream destination
+A travel agency contacts you to create a landing page for [***insert your dream destination here***]. The page needs to be aesthetically pleasing in order to get the attention of potential travelers.
+
+- **In short:** create a landing page for your dream destination!
 
 <hr/>
 
@@ -15,7 +17,7 @@
 1. `npm init -y`
 2. `npm install tailwindcss postcss autoprefixer`
 3. `npx tailwind init -p`
-4. Create a file **_postcss.config.js_** and add:
+4. Make sure you now have a file **_postcss.config.js_** with:
    ```js
    module.exports = {
      plugins: {
@@ -24,14 +26,11 @@
      },
    };
    ```
-5. Create a file **_tailwind.config.js_** and add:
+5. Make sure you now have a file **_tailwind.config.js_** with:
 
    ```js
    module.exports = {
-     purge: [
-       // './**/*.html',
-       // './**/*.js',
-     ],
+     purge: [],
      darkMode: 'media', // false or 'media' or 'class'
      theme: {
        extend: {},
@@ -49,26 +48,36 @@
    @import 'tailwindcss/utilities';
    ```
 
-7. In your **_index.html_** add:
+7. Download the landing page template from [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download). Rename the html file from landing.html to index.html
+
+8. In your **_index.html_** add:
 
 ```html
-<link href="/tailwind.output.css" rel="stylesheet" />
+<link href="./styles/tailwind.output.css" rel="stylesheet" />
 ```
 
-8. In your file **_package.json_** add:
+9. In your file **_package.json_** add the following in your scripts array:
 
 ```json
-"tailwind": "postcss ./tailwind.css -o ./tailwind.output.css"
+"tailwind": "postcss ./styles/tailwind.css -o ./styles/tailwind.output.css"
 ```
 
-9. `npm run tailwind`
+10. `npm i postcss-cli`
+
+11. `npm run tailwind`
+
+<hr/>
+
+## 🚀 Optional but Recommended
+
+1. Install IntelliSense for Visual Studio Code
 
 <hr/>
 
 ## 🎩 Purging Tailwind
 
 1. Go to file **_tailwind.config.js_**
-2. Uncomment the following code:
+2. Add the following code to your purge array:
 
 ```js
   purge: [
