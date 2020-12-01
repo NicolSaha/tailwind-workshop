@@ -95,14 +95,17 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 - Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
 - I will make things easy for you and give you the CDN links to add.
 
-1. CSS: ```css
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+1. CSS:
 
-````
+```html
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+```
 
-2. JS: ```js
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-````
+2. JS:
+
+```js
+<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+```
 
 3. Create an index.js file and add the following code to initialize:
 
