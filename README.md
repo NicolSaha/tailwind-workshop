@@ -15,7 +15,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 ## 📓 Installing Tailwind
 
 1. `npm init -y`
-2. `npm install tailwindcss postcss autoprefixer`
+2. `npm install tailwindcss postcss-cli postcss autoprefixer`
 3. `npx tailwind init -p`
 4. Make sure you now have a file **_postcss.config.js_** with:
    ```js
@@ -62,15 +62,13 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 "tailwind": "postcss ./styles/tailwind.css -o ./styles/tailwind.output.css"
 ```
 
-10. `npm i postcss-cli`
-
-11. `npm run tailwind`
+10. `npm run tailwind`
 
 <hr/>
 
 ## 💼 Optional but Recommended
 
-1. Install IntelliSense for Visual Studio Code
+1. Install [IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) for Visual Studio Code
 
 <hr/>
 
