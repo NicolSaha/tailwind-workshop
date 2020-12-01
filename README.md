@@ -90,7 +90,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 <hr/>
 
-## 🚀 Optional Final Touches
+## 🚀 Optional Final Touch
 
 1. Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
 
