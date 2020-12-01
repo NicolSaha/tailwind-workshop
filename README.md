@@ -48,7 +48,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
    @import 'tailwindcss/utilities';
    ```
 
-7. Download the landing page template from [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download). Rename the html file from landing.html to index.html
+7. Download the landing page template from [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download). Rename the html file from **_landing.html_** to **_index.html_**
 
 8. In your **_index.html_** add:
 
