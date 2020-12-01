@@ -107,7 +107,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 ```
 
-3. Create an index.js file and add the following code to initialize:
+3. Create an **_index.js_** file and add the following code to initialize:
 
 ```js
 <script>AOS.init();</script>
