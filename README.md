@@ -92,7 +92,22 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 ## 🚀 Optional Final Touch
 
-1. Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
+- Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
+- I will make things easy for you and give you the CDN links to add.
+
+1. CSS: ```css
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+````
+2. JS: ```js
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+````
+
+3. Create an index.js file and add the following code to initialize:
+
+```js
+<script>AOS.init();</script>
+```
 
 ## 💥 DON'T FORGET TO HAVE FUN
 
@@ -122,3 +137,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 This project is [MIT](https://github.com/NicolSaha/tailwind-workshop/blob/main/README.md) licensed <br/>
 © 2020 [Nicol Saha](https://github.com/NicolSaha)
+
+```
+
+```
