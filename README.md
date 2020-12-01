@@ -99,6 +99,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 ````
+
 2. JS: ```js
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 ````
@@ -137,7 +138,3 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 This project is [MIT](https://github.com/NicolSaha/tailwind-workshop/blob/main/README.md) licensed <br/>
 © 2020 [Nicol Saha](https://github.com/NicolSaha)
-
-```
-
-```
