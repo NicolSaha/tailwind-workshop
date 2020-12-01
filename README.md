@@ -31,7 +31,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
    ```js
    module.exports = {
      purge: [],
-     darkMode: 'media', // false or 'media' or 'class'
+     darkMode: false,
      theme: {
        extend: {},
      },
