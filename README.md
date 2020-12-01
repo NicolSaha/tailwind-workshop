@@ -12,6 +12,14 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 <hr/>
 
+## 🐙 Github
+
+1. Create a repository named `tailwind-intro`
+2. Be sure to have a README.md file, so that you can link to your final live version on Netlify.
+3. Clone it to your laptop.
+
+<hr/>
+
 ## 📓 Installing Tailwind
 
 1. `npm init -y`
@@ -48,7 +56,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
    @import 'tailwindcss/utilities';
    ```
 
-7. Download the landing page template from [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download). Rename the html file from **_landing.html_** to **_index.html_**
+7. Download the landing page template from [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download). Rename the html file from **_landing.html_** to **_index.html_**. Don't forget to copy the folder **assets** also into your repository.
 
 8. In your **_index.html_** add:
 
@@ -110,6 +118,8 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 ```js
 <script>AOS.init();</script>
 ```
+
+4. Upload it to [Netlify](https://www.netlify.com/), so that others can see your creation!
 
 ## 💥 DON'T FORGET TO HAVE FUN
 
