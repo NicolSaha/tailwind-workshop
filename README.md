@@ -17,6 +17,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 1. Create a repository named `tailwind-intro`
 2. Be sure to have a README.md file, so that you can link to your final live version on Netlify.
 3. Clone it to your laptop.
+4. Create a styles folder
 
 <hr/>
 
@@ -64,7 +65,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 <link href="./styles/tailwind.output.css" rel="stylesheet" />
 ```
 
-9. In your file **_package.json_** add the following in your scripts array:
+9. In your file **_package.json_** add the following in your **scripts** array:
 
 ```json
 "tailwind": "postcss ./styles/tailwind.css -o ./styles/tailwind.output.css"
@@ -80,23 +81,101 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 
 <hr/>
 
+## 🎨 Optional but fun: Colors
+
+All the [tailwind colors](https://tailwindcss.com/docs/customizing-colors#color-palette-reference) available to you. There are some that are extra and not available to you straight away.
+
+You can gain access to them by adding the following code to your file **_tailwind.config.js_**:
+
+```js
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  theme: {
+    colors: {
+      // Build your palette here
+      emerald: colors.emerald,
+      yellow: colors.amber,
+    },
+  },
+};
+```
+
+- The emerald and yellow are just aliases for the colors, and this is how you will access them in your htlm. So yellow text will be: `text-yellow`.
+
+- Adding custom colors to the default tailwind colors is as easy as:
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+        'indigo-lighter': '#b3bcf5',
+        'indigo-dark': '#202e78',
+      },
+    },
+  },
+};
+```
+
+- If the code confuses you a handy tool is [Tailwind Colors](https://tailwind-colors.meidev.co/).
+
+<hr/>
+
+## 🌟 Creating Your Own Components
+
+When you decide that you are happy with your design, you can start extracting your own components from it so that you don't have to re-type the same code in different places.
+
+You will have to create a class for the element you are styling and put all the tailwind classes into an @apply directive.
+
+- A practical example:
+
+```html
+<button class="btn-indigo">Click me</button>
+
+<style>
+  .btn-indigo {
+    @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+  }
+</style>
+```
+
+- But... instead of putting it in our css we are going to inject it into our file **_tailwind.css_**, which will then look like this:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+```
+
+- By doing this Tailwind will automatically move those styles to the same place as @tailwind components, so you don't have to worry about getting the order right in your source files.
+You can extract as many components as you want!
+<hr />
+
 ## 🎩 Purging Tailwind
 
 1. Go to file **_tailwind.config.js_**
-2. Add the following code to your purge array:
+
+2. Add the following code to your **purge array**:
 
 ```js
-  purge: [
-		'./**/*.html',
-		'./**/*.js',
-	],
+
+ './**/*.html', './**/*.js',
+
 ```
 
 3. `npm run tailwind`
 
 <hr/>
 
-## 🚀 Optional Final Touch
+## 🚀 (Really) Optional Final Touch
 
 - Integrate the [AOS](https://michalsnik.github.io/aos/) CDN and get things moving!
 - I will make things easy for you and give you the CDN links to add.
@@ -120,6 +199,7 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 ```
 
 - Upload it to [Netlify](https://www.netlify.com/), so that others can see your creation!
+- Don't forget to add a file **_.gitignore_** with the following code `node_modules` before you push to github and upload!
 
 ## 💥 DON'T FORGET TO HAVE FUN
 
@@ -130,6 +210,9 @@ A travel agency contacts you to create a landing page for [***insert your dream 
 - [Tailwind Cheatsheet](https://nerdcave.com/tailwind-cheat-sheet)
 - [Tailwind Docs](https://tailwindcss.com/docs)
 - [Pexels](https://www.pexels.com/nl-nl/)
+- [Tailwind Colors](https://tailwind-colors.meidev.co/)
+- [Tailwind Color Generator](https://tailwindcolorgenerator.com/)
+- [Tailwind Ink](https://tailwind.ink/)
 
 <hr/>
 
